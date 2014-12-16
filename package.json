@@ -1,7 +1,8 @@
 {
   "name": "kcfnw",
   "version": "0.0.0",
-  "description": "",
+  "description": "Mini project voor de statistische analyse van fnw-enquetes",
+  "repository": "git@github.com:westtoer/kcfnw.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
