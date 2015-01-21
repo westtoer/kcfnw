@@ -3,6 +3,7 @@ var kcfnw=require('./lib/kcfnw')
   , argv = require('yargs')
     .usage('Verwerk een netwerk-gebruik-enquete tot op het niveau dat je gebruik kunt plotten.\nUsage: $0')
     .example('$0 -n 247', 'TODO describe what this example does.')
+    .describe('b', 'Wees blind voor netwerk-details, scan altijd de hele set')
     .describe('net', 'Het netwerk waarop het onderzoek betrekking heeft.')
     .alias('n', 'net')         //long variant
     .default('net', '126')     //default if any
