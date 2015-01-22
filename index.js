@@ -2,11 +2,14 @@ var kcfnw=require('./lib/kcfnw')
   , path = require('path')
   , argv = require('yargs')
     .usage('Verwerk een netwerk-gebruik-enquete tot op het niveau dat je gebruik kunt plotten.\nUsage: $0')
-    .example('$0 -n 247', 'TODO describe what this example does.')
+    .example('$0 -t FIETS -n 247 data/enq/your-datafile.csv', 'Will process the data assuming the context of type == FIETS on network with id 247.')
     .describe('b', 'Wees blind voor netwerk-details, scan altijd de hele set')
     .describe('net', 'Het netwerk waarop het onderzoek betrekking heeft.')
     .alias('n', 'net')         //long variant
     .default('net', '126')     //default if any
+    .describe('t', 'focus enkel op netwerken van dit type')
+    .alias('t', 'type')
+    .default('type', 'FIETS')
     .describe('work', 'Working directory to put data in.')
     .alias('w', 'work')       
     .default('work', '/tmp/kcfnw')
@@ -16,7 +19,7 @@ var kcfnw=require('./lib/kcfnw')
     .describe('knoopbase', 'Location of knoopbase.csv to work with')
     .alias('k','knoopbase')
     .default('knoopbase', path.join(__dirname, 'data', 'base', 'knoopbase.csv'))
-    .demand('n')
+    .demand(1)
     .argv
 ;
 
