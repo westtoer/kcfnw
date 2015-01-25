@@ -1,7 +1,6 @@
 TODO
 ====
 
-- nakijken waarom nu geen enkele link overblijft! --> bug??
 - analyse van de base data / netwerken --> afstand tussen knopen bv
 
 
@@ -28,3 +27,5 @@ DONE
 
 
 - alternatief: werken met koppeling start-gemeente >> newterkid zodat we buiten het standardnet kunnen zoeken voor de start  --> minder zinvol en meer data-verzamel-werk (geschrapt)
+
+- stoeme bug gevonden waardoor we geen resultaten meer kregen
