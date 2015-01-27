@@ -1,8 +1,6 @@
 TODO
 ====
 
-- analyse van de base data / netwerken --> afstand tussen knopen bv
-
 
 - cli-switch voor verbose error reporting
 - meer fouten traceren en produceren om te kunnen nakijken waarom zo weinig traces overblijven
@@ -31,3 +29,7 @@ DONE
 - stoeme bug gevonden waardoor we geen resultaten meer kregen
 
 - only put NETWORK links/knopen in the base.
+
+- analyse van de base data / netwerken --> afstand tussen knopen meten en min oplijsten
+  opgelet: dubbele knopen in lijst: zelfde coordinaten, andere id, en geoid, zelfde knoopid, nodeid
+  --> vanaf nu identificeren op geoid
