@@ -6,6 +6,9 @@ var kcfnw=require('./lib/kcfnw')
     .describe('b', 'Wees blind voor netwerk-details, scan altijd de hele set')
     .alias('b', 'blind')
     .boolean('b')
+    .describe('r', 'Gebruik recovery process tijdens tracing. (meer matches maar minder nauwkeurig')
+    .alias('r', 'enable-recovery')
+    .boolean('r')
     .describe('net', 'Het netwerk waarop het onderzoek betrekking heeft.')
     .alias('n', 'net')         //long variant
     .default('net', '126')     //default if any

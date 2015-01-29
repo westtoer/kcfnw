@@ -1,21 +1,17 @@
 TODO
 ====
 
-
-- cli-switch voor verbose error reporting
-- meer fouten traceren en produceren om te kunnen nakijken waarom zo weinig traces overblijven
-
-- traceren van gemiste links (nu worden die nog gewoon weggegooid)
-- counts van gebruikte knopen
-- counts van gebruikte links
-- afstanden tussen knopen van zelfde nummer --> vooral minimum
-
-- pure data - output resultaten - meerdere sheets denormalised?
+- update README --> alle switches enwerkig bespreken
 
 - KML generatie met layers voor hotspots, hotlinks en missing links, ev. ook rauwe gevonden traces
 - hotcolor-ranges procentueel van groen-geel-rood
 - voor XML: https://github.com/oozcitak/xmlbuilder-js
 - voorbeeld produceren met google earth
+
+- output resultaten - meerdere sheets denormalised? meerdere KML outputs?
+
+- aanzet voor correctie-berekening
+
 
 DONE
 ====
@@ -33,3 +29,8 @@ DONE
 - analyse van de base data / netwerken --> afstand tussen knopen meten en min oplijsten
   opgelet: dubbele knopen in lijst: zelfde coordinaten, andere id, en geoid, zelfde knoopid, nodeid
   --> vanaf nu identificeren op geoid
+  
+- verklaring gevonden voor rare fenomeen dat er meer goede resultaten kwamen zónder netblind 
+  --> oorzaak: bij netblind kan er nooit recovery zijn 
+  --> om beter te kunnen vergelijken switch toegevoegd om recovery toe te laten die default AF staat!
+  VIA `-r` 
