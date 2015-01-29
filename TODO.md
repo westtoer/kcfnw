@@ -1,12 +1,28 @@
 TODO
 ====
-
-- update README --> alle switches enwerkig bespreken
+- count usage of links in the uniquely found links
 
 - KML generatie met layers voor hotspots, hotlinks en missing links, ev. ook rauwe gevonden traces
 - hotcolor-ranges procentueel van groen-geel-rood
 - voor XML: https://github.com/oozcitak/xmlbuilder-js
 - voorbeeld produceren met google earth
+
+```js
+    var builder = require('xmlbuilder');
+    var doc = builder.create();
+    doc.begin('root')
+      .ele('xmlbuilder')
+        .att('for', 'node-js')
+        .ele('repo')
+          .att('type', 'git')
+          .txt('git://github.com/oozcitak/xmlbuilder-js.git') 
+        .up()
+      .up()
+      .ele('test')
+        .txt('complete');
+
+    console.log(doc.toString({ pretty: true }));
+```
 
 - output resultaten - meerdere sheets denormalised? meerdere KML outputs?
 
