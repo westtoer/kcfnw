@@ -1,2 +1,8 @@
 #in cygwin: (wegens niet-werkende symlinks)
 node index -l data/base/20141215_link_full_export.csv -k data/base/20141215_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
+
+
+#opladen data
+curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:knoop_full_export" -o data/base/$(date --iso)_knoop_full_export.csv
+
+curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:link_full_export" -o data/base/$(date --iso)_link_full_export.csv
