@@ -1,6 +1,6 @@
 TODO
 ====
-- count usage of links in the uniquely found links
+- nice output of all sets to csv files
 
 - KML generatie met layers voor hotspots, hotlinks en missing links, ev. ook rauwe gevonden traces
 - hotcolor-ranges procentueel van groen-geel-rood
@@ -50,3 +50,6 @@ DONE
   --> oorzaak: bij netblind kan er nooit recovery zijn 
   --> om beter te kunnen vergelijken switch toegevoegd om recovery toe te laten die default AF staat!
   VIA `-r` 
+  
+- count usage of links in the uniquely found links --> ResultSet object
+
