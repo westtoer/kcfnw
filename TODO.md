@@ -2,31 +2,7 @@ TODO
 ====
 - nice output of all sets to csv files
 
-- KML generatie met layers voor hotspots, hotlinks en missing links, ev. ook rauwe gevonden traces
-- hotcolor-ranges procentueel van groen-geel-rood
-- voor XML: https://github.com/oozcitak/xmlbuilder-js
-- voorbeeld produceren met google earth
-
-```js
-    var builder = require('xmlbuilder');
-    var doc = builder.create();
-    doc.begin('root')
-      .ele('xmlbuilder')
-        .att('for', 'node-js')
-        .ele('repo')
-          .att('type', 'git')
-          .txt('git://github.com/oozcitak/xmlbuilder-js.git') 
-        .up()
-      .up()
-      .ele('test')
-        .txt('complete');
-
-    console.log(doc.toString({ pretty: true }));
-```
-
-- output resultaten - meerdere sheets denormalised? meerdere KML outputs?
-
-- aanzet voor correctie-berekening
+- aanzet voor correctie-berekening: hoe nummering van netwerk verbeteren (zo goedkoop mogelijk)
 
 
 DONE
@@ -53,3 +29,4 @@ DONE
   
 - count usage of links in the uniquely found links --> ResultSet object
 
+- KML output uit de scope gehaald --> ArcGis blijkt dit snel en voorbeeldig aan te pakken
