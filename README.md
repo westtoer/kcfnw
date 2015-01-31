@@ -26,7 +26,7 @@ This will process the data assuming the context:
 * -t: type of network (default FIETS) --type  {FIETS|WANDEL}
 * -r: laat recovery toe in de positionering (default off) --enable-recovery
 * -n: network id (default 126) --net {networkid}
-* -w: working directory for data (default /tmp/kcfnw)  --work {path-to-directory}
+* -o: output directory for data (default /tmp/kcfnw)  --output {path-to-directory}
 * -l: linkbase location (default ./data/base/linkbase.csv) --linkbase {path-to-linkbase.csv}
 * -k: knoopbase location (default ./data/base/knoopbase.csv) --knoopbase {path-to-knoopbase.csv}
 * argument: questionaire data location (required argument) {path-to-data-of-questionaire}

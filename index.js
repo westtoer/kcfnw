@@ -15,9 +15,9 @@ var kcfnw=require('./lib/kcfnw')
     .describe('t', 'focus enkel op netwerken van dit type')
     .alias('t', 'type')
     .default('type', 'FIETS')
-    .describe('work', 'Working directory to put data in.')
-    .alias('w', 'work')       
-    .default('work', '/tmp/kcfnw')
+    .describe('output', 'Output directory to put data in.')
+    .alias('o', 'output')
+    .default('o', '/tmp/kcfnw')
     .describe('linkbase', 'Location of linkbase.csv to work with')
     .alias('l','linkbase')
     .default('linkbase', path.join(__dirname, 'data', 'base', 'linkbase.csv'))
@@ -28,4 +28,4 @@ var kcfnw=require('./lib/kcfnw')
     .argv
 ;
 
-kcfnw.process(argv);
+kcfnw.doWork(argv);

@@ -1,6 +1,5 @@
 TODO
 ====
-- nice output of all sets to csv files
 
 - aanzet voor correctie-berekening: hoe nummering van netwerk verbeteren (zo goedkoop mogelijk)
 
@@ -30,3 +29,5 @@ DONE
 - count usage of links in the uniquely found links --> ResultSet object
 
 - KML output uit de scope gehaald --> ArcGis blijkt dit snel en voorbeeldig aan te pakken
+
+- nice output of all sets to csv files
