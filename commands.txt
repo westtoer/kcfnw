@@ -1,5 +1,5 @@
 #in cygwin: (wegens niet-werkende symlinks)
-node index -l data/base/2015-01-30_link_full_export.csv -k data/base/2015-01-30_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
+node analyse -l data/base/2015-01-30_link_full_export.csv -k data/base/2015-01-30_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
 
 
 #opladen data
