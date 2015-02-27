@@ -1,8 +1,20 @@
-#in cygwin: (wegens niet-werkende symlinks)
+#in cygwin: 
+
+> wegens niet-werkende symlinks
+
+```
 node analyse -l data/base/2015-01-30_link_full_export.csv -k data/base/2015-01-30_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
+
+node newnum -l data/base/2015-01-30_link_full_export.csv -k data/base/2015-01-30_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
+```
 
 
 #opladen data
+
+> nu en dan eens doen
+
+```
 curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:knoop_full_export" -o data/base/$(date --iso)_knoop_full_export.csv
 
 curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:link_full_export" -o data/base/$(date --iso)_link_full_export.csv
+```
