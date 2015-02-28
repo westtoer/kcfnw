@@ -3,6 +3,13 @@ TODO
 
 - aanzet voor correctie-berekening: hoe nummering van netwerk verbeteren (zo goedkoop mogelijk)
 
+knoopchecks
+- laat toe om de cutt-off mee te geven --> laatste existing --> alle new daaronder == probleem
+- check the gap --> zijn alle codes aangesloten of zijn er ontbrekende?
+linkchecks
+- check if link start-stop knoopid match the start-stop code
+- check if link (geo) is in the rectangle of de connecting nodes! --> tollerance?
+
 
 DONE
 ====
