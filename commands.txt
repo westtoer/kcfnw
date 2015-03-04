@@ -5,7 +5,7 @@
 ```
 node analyse -l data/base/2015-01-30_link_full_export.csv -k data/base/2015-01-30_knoop_full_export.csv data/enq/20131113_netwerkfietser_126.csv
 
-node newnum -l data/renum/2015-02-25-export-link.csv -k data/renum/2015-02-25-export-knoop.csv ; for f in /cygdrive/c/tmp/renum/err-*; do echo -e "$f\n--"; cat $f; echo "--"; done;
+node newnum -l data/renum/2015-03-04-export-link.csv -k data/renum/2015-03-04-export-knoop.csv ; for f in /cygdrive/c/tmp/renum/err-*; do echo -e "$f\n--"; cat $f; echo "--"; done;
 
 ```
 
