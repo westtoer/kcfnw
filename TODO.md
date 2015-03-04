@@ -3,10 +3,6 @@ TODO
 
 - aanzet voor correctie-berekening: hoe nummering van netwerk verbeteren (zo goedkoop mogelijk)
 
-linkchecks
-- check if link start-stop knoopid match the start-stop code
-- check if link (geo) is in the rectangle of de connecting nodes! --> tollerance?
-
 
 DONE
 ====
