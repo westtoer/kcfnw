@@ -18,7 +18,7 @@ var renum = require('./lib/renum'),
         .default('knoopbase', path.join(__dirname, 'data', 'renum', 'knoop.csv'))
         .describe('cutoff', 'the last known code for existing codes, al new ones should be bigger')
         .alias('c', 'cutoff')
-        .default('cutoff', 'TZ')
+        .default('cutoff', 'T0')
         .argv;
 
 renum.doWork(argv);
