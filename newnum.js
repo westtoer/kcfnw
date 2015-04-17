@@ -17,8 +17,17 @@ var renum = require('./lib/renum'),
         .alias('k', 'knoopbase')
         .default('knoopbase', path.join(__dirname, 'data', 'renum', 'knoop.csv'))
         .describe('cutoff', 'the last known code for existing codes, al new ones should be bigger')
+        .alias('m', 'min')
+        .default('min', 0.165)
+        .describe('min', 'the shortest links that do not need reporting')
+        .alias('M', 'MAX')
+        .default('MAX', 10.0)
+        .describe('MAX', 'the longest links that do not need reporting')
         .alias('c', 'cutoff')
         .default('cutoff', 'T0')
+        .describe('spare', 'the numbers to spare and not use')
+        .alias('s', 'cutoff')
+        .default('spare', '7,19,29,37,43,51,79,87,97')
         .argv;
 
 renum.doWork(argv);
