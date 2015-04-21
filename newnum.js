@@ -27,7 +27,7 @@ var renum = require('./lib/renum'),
         .default('cutoff', 'T0')
         .describe('spare', 'the numbers to spare and not use')
         .alias('s', 'cutoff')
-        .default('spare', '7,19,29,37,43,51,79,87,97')
+        .default('spare', '7,19,37,41,43,51,79,87,91')
         .argv;
 
 renum.doWork(argv);
