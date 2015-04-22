@@ -18,7 +18,7 @@ var renum = require('./lib/renum'),
         .default('knoopbase', path.join(__dirname, 'data', 'renum', 'knoop.csv'))
         .describe('cutoff', 'the last known code for existing codes, al new ones should be bigger')
         .alias('m', 'min')
-        .default('min', 0.165)
+        .default('min', 0.059)
         .describe('min', 'the shortest links that do not need reporting')
         .alias('M', 'MAX')
         .default('MAX', 10.0)
