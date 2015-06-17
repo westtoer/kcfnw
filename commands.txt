@@ -19,4 +19,6 @@ for f in /cygdrive/c/tmp/renum/err-*; do echo -e "$f\n--"; cat $f; echo "--"; do
 curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:knoop_full_export" -o data/base/$(date --iso)_knoop_full_export.csv
 
 curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:link_full_export" -o data/base/$(date --iso)_link_full_export.csv
+
+curl --url "http://tris.westtoer.be/geoserver/ows?request=GetFeature&service=wfs&version=1.0.0&srsName=EPSG:4326&outputformat=csv&typeName=westtoer:view_bord_link_annotated" -o data/signcount/$(date --iso)-bord-link-annotated.csv
 ```
