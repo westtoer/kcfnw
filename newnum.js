@@ -5,7 +5,7 @@
 var renum = require('./lib/renum'),
     path = require('path'),
     argv = require('yargs')
-        .usage('Herberekend en allokeerd nummers voor optimale spreiding.\nUsage: $0')
+        .usage('Herberekent en allokeerd nummers voor optimale spreiding.\nUsage: $0')
         .example('$0  -k data/renum/knoop.csv -l data/renum/link.csv', 'Will process the topology in the files.')
         .describe('output', 'Output directory to put data in.')
         .alias('o', 'output')
